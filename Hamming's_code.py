@@ -1,7 +1,7 @@
-print("Введите семибитный код")
+print()
 data = list(input())
 if len(data) != 7 or any(True if int(bit) != 0 and int(bit) != 1 else False for bit in data):
-    print("Бит должен содержать в себе 7 символов из 0 и 1")
+    print()
     exit()
 
 dictionary =  {"001": 3, "010": 2, "011": 5, "100": 0, "101": 4, "110": 2, "111": 6}
